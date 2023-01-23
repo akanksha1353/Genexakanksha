@@ -2,45 +2,80 @@
 <html> 
 <head> <title> akanksha dwivedi </title> </head>
 <style>
-h1{color:black;}
-body{background:white;}
-body{color:black;}
+     Body{
+      font-family: serif;
+      max-width: 500px;
+      margin:auto;
+      padding:20px;
+     }
+     .container_input{
+      display: flex;
+     width: 100%;
+     margin-bottom 10px;
+     }
+     .icon{
+      width: 50px;
+      padding:10px;
+      background-color:yellowgreen ;
+      color:black
+      text-align: center;
+      
+      }
+      .input_field{
+        width: 100%;
+      padding:12px;
+      }
+      ..input_field :focus{
+        border: 2px;solid:black
+      }
+      .rgt{
+        width: 100%;
+      padding:15px 20px;
+      background-color: yellow;
+      color: black;
+      cursor: pointer;
+      }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body> <h1>Responsive Registration Form </h1> <br>
 
 <form>
-    <div class="mm">
-      <i class="fa fa-envelope"></i>
-     <input type="text"placeholder="Email">
+    <div class="container_input">
+      <i class="fa fa-envelope icon"></i>
+     <input class="input_field" type="text"placeholder="Email">
     </div>
 <br>
-<div class="mm">
-    <i class="fa fa-lock"></i>
-    <input type="text"placeholder="Passward">
+<div class="container_input">
+    <i class="fa fa-lock icon"></i>
+    <input  class="input_field" type="password"placeholder="Password">
   </div>
 <br>
-<div class="mm">
-    <i class="fa fa-lock"></i>
-    <input type="text"placeholder="Re-type Passward">
+<div class="container_input">
+    <i class="fa fa-lock icon"></i>
+    <input  class="input_field" type="password"placeholder="Re-type Passwaod">
   </div><br>
-<div class="mm">
-    <i class="fa fa-user"></i>
-    <input type="text"placeholder="First Name">
-  </div> <div class="mm">
-    <i class="fa fa-user"></i>
-    <input type="text"placeholder="Last Name">
-  </div>
+  <div class="container_input">
+    <i class="fa fa-user icon"></i>
+    <input class="input_field" type="text"placeholder="First Name">
+  <i class="fa fa-user icon"></i>
+    <input class="input_field" type="text"placeholder="Last Name">
+</div>
 
  <br>
 <input type="radio" name="gender"> male
 <input type="radio" name="gender"> female<br>
 <br>
-
-<button type="register" value="register"> Register </button><br>
+</div>    
+ <input  class="input_field" type="text"placeholder="Select a country">
+</div><br>
 <br>
 <input type="checkbox" ><p1>I agree with a term and condition</p1> <br>
-<input type="checkbox" ><p1>I want to receive a new shelter</p1> 
+<br>
+<input type="checkbox" ><p1>I want to receive a new shelter</p1> <br>
+<br>
+
+<button class="rgt" type="register" value="register"> Register </button>
+
 </form>
 </body>
 </html>
